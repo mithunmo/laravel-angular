@@ -1,0 +1,17 @@
+
+.itemBlock .col-sm-4 {
+    /* width : 25%; */
+
+}
+
+.panel-body img {
+
+    max-height: 200px;
+    background-position: center;
+    width: auto;
+    
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

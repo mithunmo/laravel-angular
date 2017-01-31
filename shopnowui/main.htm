@@ -1,0 +1,17 @@
+
+
+<div class="container" ng-controller="ProductController">
+  <div class="row itemBlock">
+  <div class="col-sm-3" ng-repeat="x in itemList">
+    <div class="panel panel-primary">
+        <div class="panel-heading">{{ x.name | limitTo: 30 }}</div>
+        <div class="panel-body">
+        <a href="/#/show/{{x.id}}"><img src="{{ x.imgurl }}" class="img-responsive" alt="Image">
+        </a>
+        </div>
+        <div class="panel-footer"> {{ x.company }} </div>
+    </div>
+  </div>
+
+  </div>
+</div><br><br>

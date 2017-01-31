@@ -1,0 +1,21 @@
+
+<div class="container" ng-controller="CartListController">
+  <div class="row itemBlock">
+  <div class="col-sm-2" ng-repeat="x in itemList">
+    <div class="panel panel-primary">
+        <div class="panel-heading">{{ x.name | limitTo:10 }}</div>
+        <!--
+        <div class="panel-body">
+        <a href="/#/show/{{x.id}}"><img src="{{ x.imgurl }}" class="img-responsive" alt="Image">
+        </a>
+        </div>
+        -->
+        <div class="panel-footer"> 
+          <button type="button" ng-click="RemoveCart(x.id);" class="btn btn-danger">Remove Cart</button>
+        </div>
+        
+    </div>
+  </div>
+  
+  </div>
+</div><br><br>
